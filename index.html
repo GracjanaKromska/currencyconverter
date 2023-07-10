@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <p class="paragraph">
+        Enter the amount in PLN and convert it to the selected currency.
+    </p>
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">
+                Currency converter
+            </legend>
+            <p>
+                <label class="form__label">
+                    <span class="form__labelText">
+                        Polish zloty (PLN):
+                    </span>
+                    <input class="form__field js-currency" type="number" name="currencyNumber" step="0.01" min="0.01"
+                        placeholder="Enter the amount in PLN" required>
+                </label>
+            </p>
+            <p>
+                <label class="form__label">
+                    <span class="form__labelText">
+                        Choose currency:
+                    </span>
+                    <select class="form__field js-exchange" name="exchange">
+                        <option value="EUR" selected>Euro (EUR)</option>
+                        <option value="USD">U.S. Dollar (USD)</option>
+                        <option value="NOK">Norwegian krone (NOK)</option>
+                    </select>
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <button class="form__button">
+                Convert
+            </button>
+        </p>
+    </form>
+    <p class="result js-result"></p>
+</body>
+
+</html>

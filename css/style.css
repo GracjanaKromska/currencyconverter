@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 0 20px;
+    background-image: url("../images/backgroundImage.png");
+    background-position: center;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+}
